@@ -1,0 +1,8 @@
+[package]
+name = "portping"
+version = "0.1.0"
+authors = ["Sam Koepnick <koepnick@github.com>"]
+
+[dependencies]
+clap = "2.33.0"
+colored = "2"
