@@ -9,3 +9,21 @@ Knowing when specific listening services are back up via TCP/IP (L5) is great to
 This is a really simple tool that I use in my day-to-day sysadmin duties. Specifically, when I need to know when a system is back up and listening on port 22.
 
 Note: This does not *validate* that a proper service is up, only that a port is open and accepting connections.
+
+# Install
+
+## Simple
+
+`cargo install --git https://github.com/koepnick/port_ping`
+
+## Simplerer
+
+`wget ...`
+
+## From Source
+
+```shell
+git clone https://github.com/koepnick/port_ping
+cd port_ping
+make release
+```
