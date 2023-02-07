@@ -10,6 +10,8 @@ This is a really simple tool that I use in my day-to-day sysadmin duties. Specif
 
 Note: This does not *validate* that a proper service is up, only that a port is open and accepting connections.
 
+I have zero intention of doing any work to get this to work on Windows. 
+
 # Install
 
 ## Simple
@@ -27,3 +29,10 @@ git clone https://github.com/koepnick/port_ping
 cd port_ping
 make release
 ```
+
+## TODO: 
+
+- [ ] Add sanity check for name resolution
+- [ ] Support for Apple M1/M2 devices
+- [ ] Support for Termux on Android
+- [ ] Add a `manpage`
