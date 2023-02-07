@@ -49,7 +49,7 @@ fn main() {
     let host = matches.value_of("host").unwrap();
     let port = matches.value_of("port").unwrap().parse::<u16>().unwrap();
     let count = matches.value_of("count").unwrap().parse::<i32>().unwrap();
-    let timeout = matches.value_of("timeout").unwrap().parse::<u64>().unwrap();
+    let interval = matches.value_of("interval").unwrap().parse::<u64>().unwrap();
 
     let mut i = 0;
     while count < 0 || i < count {
@@ -60,7 +60,7 @@ fn main() {
             println!("Port {} on host {} is {}", port, host, "closed".red());
         }
         i += 1;
-        std::thread::sleep(Duration::from_secs(timeout));
+        std::thread::sleep(Duration::from_secs(interval));
     }
 }
 
