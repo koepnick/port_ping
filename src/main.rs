@@ -37,13 +37,13 @@ fn main() {
             .long("count")
             .takes_value(true)
             .default_value("-1")
-            .help("The number of times to check the port"))
-        .arg(Arg::with_name("timeout")
-            .short("t")
-            .long("timeout")
+            .help("Stop after sending count connection requests."))
+        .arg(Arg::with_name("interval")
+            .short("i")
+            .long("interval")
             .takes_value(true)
             .default_value("1")
-            .help("The time to wait between checks in seconds"))
+            .help("Wait interval seconds between sending each packet"))
         .get_matches();
 
     let host = matches.value_of("host").unwrap();
