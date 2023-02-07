@@ -18,9 +18,7 @@ I have zero intention of doing any work to get this to work on Windows.
 
 `cargo install --git https://github.com/koepnick/port_ping`
 
-## Simplerer
 
-`wget ...`
 
 ## From Source
 
