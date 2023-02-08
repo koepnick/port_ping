@@ -18,7 +18,14 @@ I have zero intention of doing any work to get this to work on Windows.
 
 `cargo install --git https://github.com/koepnick/port_ping`
 
+## Simpler-er
+> Installs to (what should be...) a local user's binary directory
 
+```shell
+DEST=~/.local/bin  # You can change me to whatever you'd like
+curl https://github.com/koepnick/port_ping/releases/download/v0.1.0/port_ping.$(uname -m) -L --output "${DEST}/port_ping"
+chmod +x "${DEST}/port_ping"
+```
 
 ## From Source
 
