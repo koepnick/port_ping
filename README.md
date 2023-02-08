@@ -35,6 +35,12 @@ cd port_ping
 make release
 ```
 
+## Usage
+
+```shell
+port_ping some.host.tld 22 --count=5 --interval=2
+```
+
 ## TODO: 
 
 - [ ] Add sanity check for name resolution
