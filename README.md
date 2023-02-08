@@ -16,7 +16,9 @@ I have zero intention of doing any work to get this to work on Windows.
 
 ## Simple
 
-`cargo install --git https://github.com/koepnick/port_ping`
+```shell
+cargo install --git https://github.com/koepnick/port_ping
+```
 
 ## Simpler-er
 > Installs to (what should be...) a local user's binary directory
