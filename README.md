@@ -2,6 +2,8 @@ A ping command for ports
 
 # Why
 
+I wanted to get my feet wet in Rust.
+
 Knowing when a server is back up via ICMP (L2) is great. 
 
 Knowing when specific listening services are back up via TCP/IP (L5) is great too!
@@ -42,6 +44,10 @@ make release
 ```shell
 port_ping some.host.tld 22 --count=5 --interval=2
 ```
+
+## Issues
+
+- If a hostname cannot be resolved, it just silently continues. 
 
 ## TODO: 
 
